@@ -1,0 +1,122 @@
+\documentclass[a4paper,10pt]{article}
+
+% Layout and formatting
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode]{hyperref}
+\usepackage{times} % Standard LaTeX font
+
+% Section formatting
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{4pt}{4pt}
+
+% Custom column type for centered X
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+\pagestyle{empty} % No page numbers
+
+\begin{document}
+
+% Header
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Sai Shreya Peyyala} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{
+\textbf{Email:} \href{mailto:saishreya.peyyala@gmail.com}{saishreya.peyyala@gmail.com} \quad
+\textbf{Phone:} +91-7981849988 \quad
+\textbf{GitHub:} \href{https://github.com/ProjectShreyapeyyala}{GitHub} \quad
+\textbf{LinkedIn:} \href{https://www.linkedin.com/in/sai-shreya-peyyala-268b4b2a2}{LinkedIn}
+}
+\end{tabularx}
+
+%Summary
+\section*{Summary}
+Senior Data Engineer with 4+ years of experience designing, building, and maintaining scalable cloud-based data pipelines on GCP and Azure. 
+Hands-on expertise in PySpark, Dataflow, BigQuery, Databricks, and Apache Airflow, with strong experience in CI/CD automation using Jenkins and GitHub.
+Proven track record of optimizing pipeline performance, improving data quality, supporting governance initiatives, and delivering reliable analytics-ready data in enterprise environments.
+
+\section{Skills}
+\textbf{Programming \& Scripting:} Python, SQL, Shell Scripting, Linux \\[3pt]
+\textbf{Big Data \& Streaming:} PySpark, Apache Kafka, Hadoop \\[3pt]
+\textbf{Cloud Platforms:} 
+GCP (BigQuery, Dataflow, Dataproc, GCS, Composer), 
+Azure (Databricks, Data Factory, Azure Data Lake) \\[3pt]
+\textbf{Workflow Orchestration:} Apache Airflow \\[3pt]
+\textbf{Databases:} Relational (Oracle), NoSQL (MongoDB) \\[3pt]
+\textbf{DevOps \& CI/CD:} Git, GitHub, Jenkins, Docker \\[3pt]
+\textbf{Data Engineering Concepts:} ETL/ELT, Data Quality, Data Governance, Pipeline Monitoring, Cost Optimization
+
+% Experience
+\section{Work Experience}
+
+% Cognizant
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Cognizant, Hyderabad} & \textcolor[HTML]{371e77}{Mar 2025 -- Present} \\
+\multicolumn{2}{@{}X@{}}{\textit{Data Engineer}} \\
+\end{tabularx}
+\vspace{-5pt}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Migrated 500+ ETL workflows from Informatica PowerCenter to Google Cloud Dataflow . Worked closely with legacy Informatica mappings, workflows, and scheduling dependencies.
+    \item Designed batch scheduling and dependency management workflows comparable to Autosys using Apache Airflow .
+    \item Implemented reconciliation checks, control totals, and audit-ready data validation for enterprise reporting .
+    \item Supported production issue resolution with root cause analysis and change management .
+    \item Optimized Google Cloud Dataflow pipelines by analyzing long-running tasks, identifying performance bottlenecks, and implementing enhancements that reduced overall pipeline execution time.
+    \item Took ownership of end-to-end ETL modules and guided junior engineers through design, development, and production support activities.
+    \item Designed, built, and maintained end-to-end data pipelines using Apache Airflow for orchestration, scheduling, monitoring, and failure handling.
+    \item \textbf{Tools:} Python, SQL, Google Cloud Dataflow, Apache Airflow, Google BigQuery, GitHub, Docker, Shell Scripting
+\end{itemize}
+
+% Tata Consultancy Services
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Tata Consultancy Services, Hyderabad} & \textcolor[HTML]{371e77}{June 2021 -- Mar 2025} \\
+\multicolumn{2}{@{}X@{}}{\textit{Data Engineer}} \\
+\end{tabularx}
+\vspace{-5pt}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item Developed a scalable ETL framework for data migration at PayPal using Python, Google Cloud Storage (GCS), and BigQuery, reducing migration time by 20\% and improving scalability by 30\%.
+    \item Automated data validation and data quality checks by integrating SQL-based rules into a centralized execution framework.
+    \item Migrated legacy Hive-based ETL workflows to PySpark, reducing runtime by up to 70\% and cutting execution costs by over 50\%.
+    \item Optimized Spark queries and transformations, achieving performance improvements of up to 70\%.
+    \item Designed and deployed CI/CD pipelines using Jenkins, and managed Docker image builds and container registries.
+    \item Built and optimized Azure Data Factory (ADF) ETL pipelines leveraging Medallion (Bronze–Silver–Gold) architecture, ingesting data from 10+ REST APIs into 16+ curated tables and improving processing efficiency by 55\%.
+    \item Engineered Delta tables in Azure Databricks to support incremental loading, upserts, and optimized transformations using PySpark and SQL, efficiently processing ~100GB of data.
+    \item Implemented fact and dimension tables, SCD Type-2 logic, and automated Change Data Capture (CDC) solutions, optimizing data integration processes and reducing operational costs by 30\%.
+    \item \textbf{Tools:} Python, SQL, PySpark, Dataproc, Google BigQuery, Google Cloud Storage, Jenkins, Docker, Azure Data Factory, Azure Databricks
+\end{itemize}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Institute of Aeronautical Engineering} & \textcolor[HTML]{371e77}{Aug 2017 -- Jun 2021} \\
+B.Tech. in Electrical and Electronics Engineering & \textit{CGPA: 8.49/10} \\
+\multicolumn{2}{@{}X@{}}{
+Relevant Courses: Data Structures, Algorithms, DBMS, Machine Learning
+}
+\end{tabularx}
+
+% Projects
+\section{Project Work}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item \textbf{Sentiment Analysis on Product Reviews:} Developed a machine learning model to classify product reviews as positive or negative using NLP techniques. Preprocessed text using tokenization, stopword removal, and TF-IDF. Built and compared Naive Bayes and LSTM models. \textit{Tools: Python, scikit-learn, TensorFlow, NLTK; Dataset: Amazon Reviews (Kaggle)}
+    
+    \item \textbf{Real-Time Vote Counting and Winner Prediction System:} Built a streaming data pipeline using Apache Kafka and Apache Spark to process real-time vote data. Implemented dynamic winner prediction logic with fault tolerance and scalability. \textit{Tools: Apache Kafka, Apache Spark Streaming, Python}
+\end{itemize}
+
+% Awards and Certifications
+\section{Awards and Certifications}
+\begin{itemize}[leftmargin=1.5em, itemsep=2pt]
+    \item \textbf{Google Cloud Certified:} Associate Cloud Engineer, Professional Data Engineer
+    \item \textbf{Microsoft Certified:} Azure Data Engineer Associate
+    \item Cleared Round 1 of the \textbf{TCS CodeVita 2020} global coding contest organized by Tata Consultancy Services
+\end{itemize}
+
+\end{document}
